@@ -1,0 +1,26 @@
+{
+  "name": "contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && npm run compile",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run dist/scripts/deploys.js --network localhost",
+    "test:merkletree": "ts-node test/merkleTree.test.ts",
+    "test:verify": "ts-node test/verify.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.12.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "circomlibjs": "^0.1.2",
+    "web3": "^1.8.1"
+  }
+}
